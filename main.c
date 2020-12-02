@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
     memset(pbSendBuffer,0,265);
     memset(&pioSendPci,0,sizeof(SCARD_IO_REQUEST));
 
-    while ((i = getopt(argc, argv, "vhrwo:l:R:BC:")) != EOF) {
+    while ((i = getopt(argc, argv, "vhrwf:o:l:R:BC:")) != EOF) {
        switch (i) {
        case 'v':
           verbose = 1;
